@@ -18,8 +18,8 @@ llm=ChatGroq(
 
 # -------------------------------------------------------
 
-# Embedding Model
-# using GoogleAI Studio
+#Embedding Model
+#Using GoogleAI Studio
 
 gen_ai_key=os.getenv("GOOGLE_API_KEY")
 embedding=GoogleGenerativeAIEmbeddings(
@@ -29,7 +29,7 @@ embedding=GoogleGenerativeAIEmbeddings(
 #-------------------------------------------------------
 
 #Vector Store
-# Chroma_Engine
+#Chroma_Engine
 
 engine=Chroma(
     embedding_function=embedding,
